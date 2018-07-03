@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int NumberOf1(int n){
-    int flag = 1
+    int flag = 1;
     int ans = 0; 
     while(flag){ //  左移最后变为0
         if(flag & n)
