@@ -7,6 +7,7 @@ public:
         for (int i = 1; i <= sum / 2 + 1; ++i) {
             dataSum[i] = dataSum[i - 1] + i;
         }
+        // dataSum 数组的目的是计算一段序列的值，这里每次移动一个位置，用一个值保存，时时更新也可。
         while (left < right - 1 && right <= sum / 2 + 1) {
             if (dataSum[right] - dataSum[left] == sum) {
                 vector<int> seq;
