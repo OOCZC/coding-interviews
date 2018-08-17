@@ -9,7 +9,7 @@ public:
     }
 };
 
-A *a[2]; // 这里必须声明在外面，声明在类内段错误。原因不明
+A *a[2]; // 这里必须声明在外面，声明在类内段错误。因为新Solution对象的a[]还没赋值
 
 class Solution:A {
 public:
@@ -24,8 +24,6 @@ public:
         delete a[1];
         return ans;
     }
-private:
-//    A *a[2];
 };
 
 /*
