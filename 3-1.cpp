@@ -21,7 +21,7 @@ bool duplicate(int numbers[], int length, int* duplication){
             }
             int temp = numbers[i];
             numbers[i] = numbers[numbers[i]];
-            numbers[numbers[i]] = temp;
+            numbers[temp] = temp;
         }
     }
     return false;
