@@ -11,6 +11,15 @@ int NumberOf1(int n){
     return ans;
 }
 
+int NumberOf1_faster(int n) {
+    int ans = 0; 
+    while (n) {
+        ++ ans;
+        n = n & (n - 1);
+    }
+    return ans;
+}
+
 /*
 int main(){
     printf("%d\n", NumberOf1(0));
