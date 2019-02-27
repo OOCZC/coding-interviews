@@ -1,6 +1,7 @@
 # Add by ooc
 Test.java
 *.class
+Solution.java
 
 # Prerequisites
 *.d
