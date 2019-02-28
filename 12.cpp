@@ -7,7 +7,7 @@ bool findPath(const char* matrix, int rows, int cols,
               const char* str, bool* flag, int i, int j, int pathNum){
     if(str[pathNum] == 0)
         return true;
-    if(i < 0 || i >= rows || j < 0 && j >= cols ||
+    if(i < 0 || i >= rows || j < 0 || j >= cols ||
        flag[i * cols + j] == true || matrix[i * cols + j] != str[pathNum])
         return false;
     flag[i * cols + j] = true;

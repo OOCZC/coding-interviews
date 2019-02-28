@@ -62,11 +62,11 @@ public class Solution {
     
     ArrayList<Integer> arr = new ArrayList<Integer>();
 
-    public ArrayList<Integer> printListFromTailToHead(ListNode head) {
+    public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
 
-        if (head != null) {
-            printListFromTailToHead(head.next);
-            arr.add(head.val);
+        if (listNode != null) {
+            printListFromTailToHead(listNode.next);
+            arr.add(listNode.val);
         }
 
         return arr;
